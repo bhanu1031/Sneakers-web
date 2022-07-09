@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+    *  {
+        box-sizing: border-box;
+    }
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+    label {
+        padding: 12px 12px 12px 2px;
+        display: inline-block;
+    }
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+    .col-35 {
+        float: left;
+        width: 35.5%;
+        margin-top: 6px;
+    }
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /*Responsive layout*/
+    @media screen and (max-width: 600px){
+        .col-25, .col-75, .col-35 {
+            width: 100%;
+            margin-top: 0;
+        }
+        
+    }
+    @media screen and (max-width: 600px) {
+        .registerbtn (
+            width: 100%;
+        )
+    }
+    .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+    }p{
+        font: Georgia, "Times New Roman", Times, serif
+        font-style:italic;
+        font-weight: 300;
+    }
+    a {
+        color: dodgerblue;
+    }
+    /*Style for submit button*/
+    .registerbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    .registerbtn: hover  {
+        opacity: 1;
+    }
+
+    </style>
+    
+</head>
+<body>
+  <div class="header">
+    <a href="Home.html" class="logo">/BuckOFF/</a>
+    <div class="header-right">
+      <a class="active" href="Home.html">Home</a>
+      <a href="sneakers.html">Sneakers</a>
+      <a href="Hype.html">Hype</a>
+      <a href="streetwear.html">Streetwear</a>
+      <a href="Login.html">Register</a>
+    </div>
+  </div>
+  <section>
+    <div class="container">
+      
+    <form action="/action_page.php">
+        <div class="row">
+            <div class="col-25">
+            <label for="email"><b>Name</b></label>
+            </div>
+            <div class="col-35">
+            <input type="text" placeholder="First" name="fname" required>
+            </div>
+            <input type="text" placeholder="Last" name="lname" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+            <label for="username"><b>Choose your username</b></label>
+            </div>
+            <div class="col-75">
+            <input type="text" placeholder="@htmldemo.com" name="domain" align="right" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+            <label for="password"><b>Create a password</b></label>
+            </div>
+            <div class="col-75">
+            <input type="password" placeholder="" name="password" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+            <label for="repwd"><b>Confirm a password</b></label>
+            </div>
+            <div class="col-75">
+            <input type="password" placeholder="" name="repwd" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+            <label for="repwd"><b>Birthday</b></label><br />
+            </div>
+            <div class="col-25">
+            <select id="month" name="month">
+                <option value="Jan">January</option>
+                <option value="Feb">February</option>
+                <option value="Mar">March</option>
+                <option value="Apr">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="Aug">August</option>
+                <option value="Sept">September</option>
+                <option value="Oct">October</option>
+                <option value="Nov">November</option>
+                <option value="Dec">December</option>
+            </select>
+            </div>
+            <div class="col-25">
+            <input type="text" placeholder="Date" name="date" required>
+            </div>
+            <div class="col-25">
+            <input type="text" placeholder="Year" name="year"required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+            <label for="gender"><b>Gender</b></label><br />
+            </div>
+            <div class="col-75">
+            <select id="genderselect" name="genderselect">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="others">Others</option>
+            
+            </select>
+            </div>
+        </div>
+        <div class="row" align="right">
+        <button type="submit" class="registerbtn"><strong>Register</strong></button>
+        </div>
+    </form>
+    </div>
+    <div class="container signin">
+        <p>ALready have an account? <a href="#">Sign in</a></p>
+    </div>
+    </section>       
+    <footer>
+      <a href="faq.html">FAQ</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="termsofuse.html">Terms of Use</a>
+        <a href="Privacypolicy.html">Privacy Policy</a>
+    </footer> 
+</body>
+</html>
